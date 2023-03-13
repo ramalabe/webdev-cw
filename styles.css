@@ -1,6 +1,7 @@
 .heading{
     text-align: center;
     position: relative;
+    color: white;
     top: -100%;
     animation-name: slide-in;
     animation-duration: 1s;
@@ -11,11 +12,12 @@
 }
 
 body {
-  background-image: url(background.png);
+  background-image: url(backgrounds.png);
   background-size: cover;
 }
 
 .about-us{
+    color: white;
     text-align: center;
     position: relative;
     top: -100%;
