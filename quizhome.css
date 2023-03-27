@@ -82,3 +82,17 @@ h2{
     box-shadow: none;
     transform: none;
 }
+
+#top-right-link {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+#top-right-link:hover{
+    cursor: pointer;
+    color: red;
+}
