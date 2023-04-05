@@ -7,9 +7,10 @@
   }
   body{
     min-height: 100vh;
-    background: white;
+    background: #171717;
     background-size: cover;
     background-position: center;
+    color: white;
   }
   .side-bar{
     background: #1b1b1b;
@@ -69,7 +70,7 @@
   }
   .menu-btn{
     position:fixed;
-    color: rgb(0,0,0);
+    color: white;
     font-size: 35px;
     cursor: pointer;
     margin: 25px;
@@ -104,7 +105,7 @@ h1{
 .bottom{
     width: 158.6%;
     height: 150px;
-    background-color: rgb(212, 208, 208);
+    background-color: rgb(85, 83, 83);
     position: absolute;
     margin-left: -350px;
     margin-top: 150px;
@@ -112,7 +113,14 @@ h1{
 }
 .bottom p{
     margin-left: 50px;
+    
 }
 .bottom .pp{
-    margin-left: 250px;
+    margin-left: 100px;
+}
+.bottom a{
+  margin-left: 50px;
+  color: aliceblue;
+  
+  
 }
