@@ -1,0 +1,130 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+body{
+  background-color: white;
+}
+
+
+h1{
+  text-align: center;
+  margin-top: 30px;
+}
+label{
+  margin-left: 50px;
+}
+.table1 {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+
+.table1 td {
+  padding: 20px;
+  text-align:left ;
+  font-size: 17px;
+  
+}
+.table1 td input{
+  width: 300px;
+  height: 25px;
+  text-align:center ;
+  
+}
+.table1 td .input1{
+  width: 50px;
+  height: 25px;
+  text-align:center ;
+  
+}
+
+.table1 td:first-child {
+ 
+  text-align: center;
+}
+.table1 td:nth-child(2) {
+  text-align: left;
+}
+.table1 td:nth-child(3) {
+  text-align: center;
+}
+
+
+.table1 td:last-child {
+  text-align: left;
+}
+	
+.table2 {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+.table2 td {
+  padding: 20px;
+  text-align:center ;
+  font-size: 17px;
+  
+}
+.table2 td input{
+  width: 300px;
+  height: 25px;
+  text-align:center ;
+  
+}
+
+.button-edit{
+  width: 120px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+} 
+.button-edit:hover{
+  background-color: rgb(122, 127, 131);
+}
+.tabel2-div{
+  width:95%;
+  background-color: rgb(225, 222, 228);
+  height: fit-content;
+  margin-left: 40px;
+  
+}
+#cancel1,#save1,#cancel2,#save2{
+  width: 120px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#cancel1,#cancel2,.btn1{
+  border-color: red;
+}
+#save1,#save2,.btn2{
+  border-color: green;
+}
+#cancel1:hover,#cancel2:hover,.btn1:hover{
+  background-color: rgb(228, 172, 126);
+}
+#save1:hover,#save2:hover,.btn2:hover{
+  background-color: rgb(104, 230, 142);
+}
+.btn1,.btn2{
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+
