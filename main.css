@@ -1,0 +1,95 @@
+/*body{
+    background-image: linear-gradient(rgb(255, 253, 253), rgb(211, 223, 246));
+    padding-bottom: 13%;
+}*/
+
+
+.item{
+    height: 240px;
+    width: 380px;
+    background-color: blanchedalmond;
+    box-shadow: 5px 5px 5px #2c2c2c;
+    transition: transform .2s;
+}
+
+.row{
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+.sport-title{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    padding-top: 25%;
+
+}   
+
+a:link {
+    text-decoration: none;
+  }
+
+#active{
+    color: aquamarine;
+}
+
+.item:hover{
+ 
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2); 
+      
+}
+
+
+
+/*Comments Page */
+.header{
+    background-image: url('img/background-1.jpg');
+    background-repeat: no-repeat;
+    width: auto;
+    padding-bottom: 150px;
+    margin-left: -13px;
+    margin-right: -13px;
+
+}
+
+.title{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .comment h4 {
+    margin-top: 0;
+  }
+  
+  .comment p {
+    margin-bottom: 0;
+  }
+  
+
+
+.form-area{
+    padding-top: 5% ;
+}
+
+
+.comments{
+    margin-left: 6%;
+}
+
+
+.form-area{
+    margin-left: 6%;
+}
