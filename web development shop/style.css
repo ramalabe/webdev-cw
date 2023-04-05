@@ -500,8 +500,9 @@ h3{
 }
 .add-to-cart:hover{
   background-color: hsl(249, 32%, 17%);
-  color: rgb(236, 234, 234) e;
+  color: white;
 }
+
 .content{
   margin-top: 700px;
   margin-left: 3%;
