@@ -1,7 +1,169 @@
-/*body{
-    background-image: linear-gradient(rgb(255, 253, 253), rgb(211, 223, 246));
-    padding-bottom: 13%;
-}*/
+body{
+    background-color: #0f0f0f;
+}
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+/* NAVBAR STYLES START */
+
+.container{
+    width: 100%;
+    
+    
+}
+
+.nav-wrapper{
+    background-color: transparent;
+    margin: -8px;
+    padding: 5px;
+    
+}
+
+.menu-wrapper{
+    text-align: center;
+    margin-top: -3%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}
+
+.nav-menu{
+    color: aliceblue;
+    padding: 8px;
+}
+
+.nav-menu:hover{
+    color: bisque;
+}
+
+.active{
+    color: aqua;
+}
+
+.active:hover{
+    color: aqua;
+}
+
+
+
+/* NAVBAR STYLES END */
+
+.header-comments{
+    background-image: url(img/background-1.jpg);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: -6%;
+
+}
+
+/*HEADER START */
+.header-wrapper{
+    width: 100%;
+    height:754px;
+    margin-top: -5%;
+    background-image: linear-gradient(to right, #B1B1B1 , #d7d7d7);
+}
+
+.header-img{
+    width: 68%;
+    position: absolute;
+    top: 5%;
+}
+
+.header-title{
+    color: aliceblue;
+    font-size: 150px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Amasis MT Pro Black', Times, serif;
+    text-shadow: 2px 2px 5px rgb(55, 55, 55);
+}
+
+.header-sub{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgb(55, 55, 55);
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    font-size: 25px;
+    font-family: 'Copperplate Gothic Bold', Times, serif;
+}
+
+.down-arrow{
+    width: 4%;
+    position: relative;
+    top: 85%;
+    left: 50%;
+    animation: blink-animation 6s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+
+}
+
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+/* HEADER END */
+
+.title-comments{
+    padding-top: 10%;
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 900PX;
+
+}
+
+.common-title1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: Arial Black, Helvetica, sans-serif;
+}
+
+.common-data1{
+    text-align:center ;
+
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgb(159, 159, 159);
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+.inner-content{
+margin-left: 10%;
+}
 
 
 .item{
@@ -43,53 +205,25 @@ a:link {
       
 }
 
+/* MAIN CONTENT */
 
 
-/*Comments Page */
-.header{
-    background-image: url('img/background-1.jpg');
-    background-repeat: no-repeat;
-    width: auto;
-    padding-bottom: 150px;
-    margin-left: -13px;
-    margin-right: -13px;
-
-}
-
-.title{
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+/*Sport Section*/
+.title-Basket{
     text-align: center;
-    padding-top: 150px;
+    background-image: url(img/basketball-black.jpg);
+    color: white;
+    padding: 10%;
+    margin: -4%;
 }
-
-
-.comment {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .comment h4 {
-    margin-top: 0;
-  }
-  
-  .comment p {
-    margin-bottom: 0;
-  }
-  
-
-
-.form-area{
-    padding-top: 5% ;
+.container-sport{
+    padding: 10%;
 }
-
-
-.comments{
-    margin-left: 6%;
+.basketball-img{
+    width: 50%;
 }
-
-
-.form-area{
-    margin-left: 6%;
+p{
+      line-height: 1.6;
+      text-align: justify;
 }
+/*End Sport */
