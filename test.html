@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blahh</title>
+    <!--icon style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins",sans-serif;
+      }
+      body{
+        min-height: 100vh;
+        background: white;
+        color: white;
+        background-size: cover;
+        background-position: center;
+      }
+      .side-bar{
+        background: #1b1b1b;
+        width: 250px;
+        left: -250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        overflow-y: auto;
+        transition: 0.6s ease;
+        transition-property: left;
+      }
+      .close-btn{
+        position: absolute;
+        color: #fff;
+        font-size: 23px;
+        right: 0px;
+        margin: 15px;
+        cursor: pointer;
+      }
+      .menu{
+        width: 100%;
+        margin-top: 30px;
+      }
+      .menu .item{
+        position: relative;
+        cursor: pointer;
+      }
+      .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;    
+        padding: 5px 30px;
+        line-height: 60px;  
+      }
+      .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+        
+        
+      }
+      .dropdown.rotate {
+        transform: rotate(90deg);
+      }
+
+      .item .sub-menu{
+        background: #262626;
+        display: none;
+      }
+      .menu-btn{
+        position: absolute;
+        color: rgb(0,0,0);
+        font-size: 35px;
+        cursor: pointer;
+        margin: 25px;
+      }
+      .sub-menu.active {
+        display: block;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!--menu button-->
+    <div class="menu-btn" onclick="openSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+      <header>
+        <!--close button-->
+        <div class="close-btn" onclick="closeSidebar()">
+          <i  class="fas fa-times"></i>
+        </div>
+        
+      </header>
+      <!--Menu Items-->
+      <div class="menu">
+        <div class="item"><a href="">Item</a></div>
+        <div class="item"><a href="#" onclick="toggleSubmenu(event); toggleArrowRotation1()">Item
+        <!--dropdown-->
+        <!--dropdown arrow-->
+        <i class="fas fa-angle-right dropdown" id="dropdown-arrow1"></i>
+      </a>
+      <div class="sub-menu">
+        <a href="#" class="sub-item">Sub-itme1</a>
+        <a href="#" class="sub-item">Sub-itme2</a>
+        <a href="#" class="sub-item">Sub-itme3</a>
+      </div>
+    </div>
+        <div class="item"><a href="">Item</a></div>
+        <div class="item"><a href="" onclick="toggleSubmenu(event); toggleArrowRotation2()">Item
+              <!--dropdown-->
+            <!--dropdown arrow-->
+            <i class="fas fa-angle-right dropdown" id="dropdown-arrow2"></i>
+          </a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Sub-itme1</a>
+            <a href="#" class="sub-item">Sub-itme2</a>
+            <a href="#" class="sub-item">Sub-itme3</a>
+          </div>
+        </div>
+        <div class="item"><a href="">Item</a></div>
+      </div>
+    </div>
+    <script>
+      const sidebar = document.querySelector('.side-bar');
+
+      function openSidebar() {
+        sidebar.style.left = '0';
+      }
+
+      function closeSidebar() {
+        sidebar.style.left = '-250px';
+      }
+
+      function toggleSubmenu(event) {
+        event.preventDefault();
+        const submenu = event.target.nextElementSibling;
+        submenu.classList.toggle('active');
+      }
+
+      function toggleArrowRotation1() {
+        const arrow = document.getElementById("dropdown-arrow1");
+        arrow.classList.toggle("rotate");
+      }
+      function toggleArrowRotation2() {
+        const arrow = document.getElementById("dropdown-arrow2");
+        arrow.classList.toggle("rotate");
+      }
+
+
+
+    </script>
+  </body>
+</html>

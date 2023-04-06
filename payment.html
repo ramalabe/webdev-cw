@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Payment</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<h2 style="text-align: center;">Payment</h2><br>
+<p>! Indicates Required Fields !</p><br>
+<div class="row">
+  <div class="column1">
+    <div class="container">
+      <form method="get" id="myForm">
+      
+        <div class="row">
+          <div class="column2">
+            
+			
+            <label > Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Chamindi Dilshika" >
+            <label  >Contact Details</label>
+			<label  id="current-email">w1867600@WESTMINSTER.AC.UK</label>
+            <button onclick="Contact()" class="button-edit" >Edit</button><br><br>  
+			<div id="contact"  class="tabel2-div" style="display: none;">                   <!--hide the flower until  click the button-->
+				
+					<label >Phone Number<input type="text" id="pNumber" value="" placeholder="0123456789" maxlength="10"></label>
+					<label >Email Address<input type="text" id="emailAddrs" value=""   required ></label>	
+					<button id="cancel2" onclick="cancelData2()">Cancel</button><button id="save2" onclick="saveData2()">Save</button>	
+					
+				
+				
+			</div>
+            
+			<div id="address"  >
+				
+					<label >Address<input type="text" id="address1" maxlength="20" value=""  ></label>
+					<label >Town/City<input type="text" id="town" maxlength="20" value=""   ></label>
+					<label >Status / Region <input type="text" id="status" maxlength="20" value=""   ></label>
+					<label >Postcode / Zip code<input type="text" id="zipcode" size="10" value=""  ></label>
+					<label>Country<input type="text" id="cntry" size="10" value=""  ></label>
+					
+					
+				
+			
+			</div>
+		
+        
+          
+
+            <div class="row">
+              <div class="column2">
+                
+              </div>
+              <div class="column2">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="column2">
+            <h4>Payment</h4><br>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <img src="card-removebg-preview.png" alt="" width="100" height="30">
+              
+            </div>
+            <label >Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Chamindi"  required >
+            <label >Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <label >Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="row">
+              <div class="column2">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="1234" required>
+              </div>
+              <div class="column2">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="PAY NOW" class="btn"  onclick="success()">              <!--button for load the new.html page-->
+      </form>
+    </div>
+  </div>
+  
+</div>
+<script src="script.js">
+</script>
+
+</body>
+</html>
