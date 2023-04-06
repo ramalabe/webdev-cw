@@ -1,14 +1,14 @@
-//Dots in Slide
+
 
 let slideIndex = 0;
-showSlides();
+showSlides();                             //A custom function for automatic slides                          
 
 function showSlides(){
- let i;
+ let i;                               
  let slides = document.getElementsByClassName("mySlides-fade");
  let dots = document.getElementsByClassName("dot");
  for(i=0; i<slides.length;i++){
-   slides[i].style.display ="none";
+   slides[i].style.display ="none";                        
  }
  slideIndex++;
  if(slideIndex>slides.length){slideIndex =1}
@@ -18,7 +18,7 @@ function showSlides(){
  }
  slides[slideIndex-1].style.display="block";
  dots[slideIndex-1].className += " active";
- setTimeout(showSlides, 2000); // Change image every 2 seconds
+ setTimeout(showSlides, 2000);            // Change image every 2 seconds
 
 }
 
@@ -145,19 +145,6 @@ function cancel(){
   window.open("shop.html");
   
 }
-const myTable = document.getElementById("table-items");
-const nextBtn = document.getElementById("next");
-
-nextBtn.addEventListener("click", () => {
-  // Check if the table has any rows
-  if (myTable.rows.length === 0) { // the first row is the header row
-    // If the table is empty, display an error message and don't proceed
-    alert("Table is empty. Please add some data before proceeding.");
-  } else {
-    // If the table has rows, proceed to the next page
-    window.location.href = "next-page.html";
-  }
-});
 
 
 

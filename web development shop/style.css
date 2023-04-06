@@ -7,7 +7,7 @@
   
 }
 body{
-  background-color: rgb(236, 234, 234) ;
+  background-color: rgb(236, 234, 234) ;  /*#171717*/
   font-family: Arial;
 }
 
@@ -61,6 +61,7 @@ body {font-family: Verdana, sans-serif;}
   position: absolute;
   background-color: rgb(67, 72, 139);
   height: 500px;
+  
 }
 
 
@@ -140,16 +141,6 @@ body {font-family: Verdana, sans-serif;}
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 
 
