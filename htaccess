@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ splash.html [NC,L]
